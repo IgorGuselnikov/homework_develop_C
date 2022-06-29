@@ -24,7 +24,7 @@ else
 
 // Третья задача
 
-Console.WriteLine("введите день недели");
+/*Console.WriteLine("введите день недели");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 
 if (dayNumber >= 1 && dayNumber <=7)
@@ -61,4 +61,16 @@ if (dayNumber >= 1 && dayNumber <=7)
 else
 {
     Console.WriteLine("Введено неверное число недели");
+}*/
+
+// Четвертая задача
+
+Console.WriteLine("Введите число N:");
+int N = Convert.ToInt32(Console.ReadLine());
+int negativeN = N * (-1);
+while (negativeN <= N)
+{
+    Console.WriteLine(negativeN);
+    negativeN++;
 }
+
