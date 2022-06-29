@@ -1,13 +1,25 @@
-﻿//Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным
+﻿//Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 Console.WriteLine("Введите число:");
-int number = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 
-
-if (number%2 == 0)
+if (N > 1)
 {
-    Console.WriteLine("Число " + number + " является четным");
+    int i = 1;
+    while (i <= N)
+    {
+        if (i%2 != 0)
+        {
+            i++;
+        }
+        else
+        {
+            Console.Write(i + " ");
+            i++;
+        }
+    }
+
 }
-else 
+else
 {
-    Console.WriteLine("Число " + number + " не является четным");
+    Console.WriteLine("Введенное число не удовлетворяет условиям");
 }
