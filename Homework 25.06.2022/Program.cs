@@ -1,24 +1,13 @@
-﻿//Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-Console.WriteLine("Введите первое число:");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число:");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите третье число:");
-int thirdNumber = Convert.ToInt32(Console.ReadLine());
-int max = 0;
+﻿//Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным
+Console.WriteLine("Введите число:");
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (firstNumber > secondNumber && firstNumber > thirdNumber)
+
+if (number%2 == 0)
 {
-    max = firstNumber;
-    Console.WriteLine("Максимальное число из трех:" + firstNumber);
+    Console.WriteLine("Число " + number + " является четным");
 }
-else if (secondNumber > firstNumber && secondNumber > thirdNumber)
+else 
 {
-    max = secondNumber;
-    Console.WriteLine("Максимальное число из трех:" + secondNumber);
-}
-else
-{
-    max = thirdNumber;
-    Console.WriteLine("Максимальное число из трех:" + thirdNumber);    
+    Console.WriteLine("Число " + number + " не является четным");
 }
